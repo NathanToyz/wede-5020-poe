@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry - Golden Crust Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header>
+    <nav>
+        <h1>Golden Crust Bakery</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= ENQUIRY FORM ================= -->
+<section>
+    <h2>Place an Order</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label>Order Details:</label>
+        <textarea id="details"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- ================= JAVASCRIPT LINK ================= -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

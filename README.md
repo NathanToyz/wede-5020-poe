@@ -1,9 +1,9 @@
 # Project Title
-Your project's title
+Golden Crust Bakery
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+**Student number:** ST10475664 <br>
+**Student Name:** Nathan Ngobeni
 
 ## Project Overview
 

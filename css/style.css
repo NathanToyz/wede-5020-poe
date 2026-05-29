@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #FFF5E1;
+}
+
+nav {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    color: #8B4513;
+}
+
+section {
+    padding: 20px;
+}
