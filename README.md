@@ -33,7 +33,14 @@ Level of social media interaction associated with the website
 
 
 ## Sitemap
+Part 3 Changes
 
+- Added JavaScript search
+- Added Lightbox Gallery
+- Added Form Validation
+- Added SEO Meta Tags
+- Added robots.txt
+- Added sitemap.xml
 ![mysitemap.png](img/mysitemap.png)
 
 ## References
