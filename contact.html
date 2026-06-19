@@ -1,36 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Golden Crust Bakery">
+
+    <meta name="keywords"
+          content="bakery,contact,johannesburg">
+
     <title>Contact - Golden Crust Bakery</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header>
+
     <nav>
+
         <h1>Golden Crust Bakery</h1>
+
         <ul>
+
             <li><a href="index.html">Home</a></li>
+
             <li><a href="about.html">About</a></li>
+
             <li><a href="services.html">Products</a></li>
+
             <li><a href="enquiry.html">Enquiry</a></li>
+
             <li><a href="contact.html">Contact</a></li>
+
         </ul>
+
     </nav>
+
 </header>
 
+<!-- ================= CONTACT SECTION ================= -->
+
 <section>
+
     <h2>Contact Us</h2>
 
-    <!-- Bakery image -->
-    <img src="images/bakery.jpg" alt="Bakery location">
+    <img src="images/bakery.jpg"
+         alt="Golden Crust Bakery">
 
-    <p>Email: info@goldencrust.co.za</p>
-    <p>Phone: 012 345 6789</p>
-    <p>Location: Johannesburg Gauteng, South Africa</p>
+    <div class="contact-card">
+
+        <h3>Contact Information</h3>
+
+        <p>Email: info@goldencrust.co.za</p>
+
+        <p>Phone: 012 345 6789</p>
+
+        <p>Location: Johannesburg, Gauteng, South Africa</p>
+
+    </div>
+
 </section>
 
+<!-- ================= CONTACT FORM ================= -->
+
+<section>
+
+    <h2>Send Us A Message</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label for="name">Full Name</label>
+
+        <input
+        type="text"
+        id="name"
+        required>
+
+        <label for="email">Email Address</label>
+
+        <input
+        type="email"
+        id="email"
+        required>
+
+        <label for="details">Message</label>
+
+        <textarea
+        id="details"
+        rows="5"
+        required></textarea>
+
+        <button type="submit">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<section>
+
+    <h2>Find Us</h2>
+
+    <iframe
+    src="https://www.google.com/maps?q=Johannesburg&output=embed"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+
+    </iframe>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Golden Crust Bakery
+
+    </p>
+
+    <p>
+
+        Johannesburg, South Africa
+
+    </p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
