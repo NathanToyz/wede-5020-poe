@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta
-name="description"
-content="Golden Crust Bakery offers fresh bread, cakes and pastries in Johannesburg">
-
-<meta
-name="keywords"
-content="bakery,cakes,bread,pastries">
-
-<meta
-name="author"
-content="Your Name">
     <meta charset="UTF-8">
     <title>Enquiry - Golden Crust Bakery</title>
     <link rel="stylesheet" href="css/style.css">
@@ -37,42 +26,19 @@ content="Your Name">
 <section>
     <h2>Place an Order</h2>
 
-   <form onsubmit="return validateForm()">
+    <form onsubmit="return validateForm()">
 
-<label>Full Name</label>
-<input type="text" id="name" required>
+        <label>Name:</label>
+        <input type="text" id="name"><br><br>
 
-<label>Email</label>
-<input type="email" id="email" required>
+        <label>Email:</label>
+        <input type="email" id="email"><br><br>
 
-<label>Phone Number</label>
-<input type="tel" id="phone" required>
+        <label>Order Details:</label>
+        <textarea id="details"></textarea><br><br>
 
-<label>Product</label>
-
-<select id="product">
-
-<option>Cake</option>
-
-<option>Bread</option>
-
-<option>Pastry</option>
-
-</select>
-
-<label>Quantity</label>
-
-<input type="number" id="quantity" required>
-
-<label>Message</label>
-
-<textarea id="details"></textarea>
-
-<button type="submit">
-Submit
-</button>
-
-</form>
+        <button type="submit">Submit</button>
+    </form>
 </section>
 
 <!-- ================= JAVASCRIPT LINK ================= -->
