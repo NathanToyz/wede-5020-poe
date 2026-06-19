@@ -1,236 +1,296 @@
-<body>
-    <div id="loader">
-    <h1>Golden Crust Bakery</h1>
-</div>
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- ================= NAVIGATION BAR ================= -->
-<header>
-    <meta
-name="description"
-content="Golden Crust Bakery offers fresh bread, cakes and pastries in Johannesburg">
+<head>
 
-<meta
-name="keywords"
-content="bakery,cakes,bread,pastries">
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
 
-<meta
-name="author"
-content="Your Name">
-    <nav>
-        <button id="darkModeBtn">🌙</button>
-        <h1>Golden Crust Bakery</h1>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <meta name="description"
+          content="Golden Crust Bakery offers fresh bread, cakes and pastries in Johannesburg.">
+
+    <meta name="keywords"
+          content="bakery,cakes,bread,pastries,johannesburg">
+
+    <meta name="author"
+          content="Your Name">
+
+    <title>Golden Crust Bakery</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-</header>
 
-<!-- ================= HERO SECTION ================= -->
-<section class="hero">
+</head>
 
-    <h2 id="typing-text"></h2>
+<body>
 
-    <p>
-        Discover handcrafted breads, premium cakes,
-        and delicious pastries baked fresh every day.
-    </p>
-
-    <img src="images/bakery.jpg" alt="Golden Crust Bakery">
-
-    <br><br>
-
-    <a href="services.html">
-        <button>Explore Our Products</button>
-    </a>
-
-</section>
-
-<!-- ================= WELCOME SECTION ================= -->
-<section>
-
-    <h2>Welcome to Golden Crust Bakery</h2>
-
-    <p>
-        Golden Crust Bakery has been serving the community
-        with freshly baked goods since 2020. We pride ourselves
-        on using quality ingredients and traditional baking
-        techniques to create unforgettable flavours.
-    </p>
-
-</section>
-
-<!-- ================= FEATURED PRODUCTS ================= -->
-<section>
-
-    <h2>Featured Products</h2>
-
-    <div class="product-gallery">
-
-        <div class="product-card">
-
-            <img src="images/cake.jpg" alt="Chocolate Cake">
-
-            <h3>Chocolate Cake</h3>
-
-            <p>
-                Rich chocolate sponge layered with
-                silky chocolate frosting.
-            </p>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="images/bread.jpg" alt="Fresh Bread">
-
-            <h3>Artisan Bread</h3>
-
-            <p>
-                Freshly baked every morning using
-                premium ingredients.
-            </p>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="images/pastry.jpg" alt="Pastries">
-
-            <h3>Luxury Pastries</h3>
-
-            <p>
-                Flaky, buttery pastries crafted
-                by expert bakers.
-            </p>
-
-        </div>
-
+    <!-- ================= LOADER ================= -->
+    <div id="loader">
+        <h1>Golden Crust Bakery</h1>
     </div>
 
-</section>
-
-<!-- ================= WHY CHOOSE US ================= -->
-<section>
-
-    <h2>Why Choose Golden Crust?</h2>
-
-    <div class="product-gallery">
-
-        <div class="product-card">
-            <h3>Fresh Daily</h3>
-            <p>
-                Every product is baked fresh daily
-                to ensure exceptional quality.
-            </p>
-        </div>
-
-        <div class="product-card">
-            <h3>Premium Ingredients</h3>
-            <p>
-                We source only the finest ingredients
-                for every recipe.
-            </p>
-        </div>
-
-        <div class="product-card">
-            <h3>Custom Orders</h3>
-            <p>
-                Custom cakes and catering services
-                available for special occasions.
-            </p>
-        </div>
-
+    <!-- ================= NOTIFICATION ================= -->
+    <div id="notification">
+        Welcome to Golden Crust Bakery!
     </div>
 
-</section>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
 
-<!-- ================= TESTIMONIALS ================= -->
-<section>
+        <nav>
 
-    <h2>Customer Reviews</h2>
+            <h1>Golden Crust Bakery</h1>
 
-    <div class="product-gallery">
+            <button id="darkModeBtn">
+                🌙
+            </button>
 
-        <div class="product-card">
-            <p>
-                ⭐⭐⭐⭐⭐
-            </p>
+            <ul>
 
-            <p>
-                "The best bakery in Johannesburg.
-                Their cakes are incredible!"
-            </p>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-            <h3>- Sarah M.</h3>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Products</a>
+                </li>
+
+                <li>
+                    <a href="enquiry.html">Enquiry</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+
+        <h2 id="typing-text"></h2>
+
+        <p>
+            Discover handcrafted breads, premium cakes,
+            and delicious pastries baked fresh every day.
+        </p>
+
+        <img src="images/bakery.jpg"
+             alt="Golden Crust Bakery">
+
+        <br><br>
+
+        <a href="services.html" class="btn">
+            Explore Our Products
+        </a>
+
+    </section>
+
+    <!-- ================= WELCOME SECTION ================= -->
+    <section>
+
+        <h2>Welcome to Golden Crust Bakery</h2>
+
+        <p>
+            Golden Crust Bakery has proudly served
+            the Johannesburg community since 2020.
+            We specialise in handcrafted breads,
+            luxury cakes and delicious pastries.
+        </p>
+
+    </section>
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section>
+
+        <h2>Featured Products</h2>
+
+        <div class="product-gallery">
+
+            <div class="product-card">
+
+                <img src="images/cake.jpg"
+                     alt="Chocolate Cake">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>
+                    Rich chocolate sponge layered
+                    with silky chocolate frosting.
+                </p>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/bread.jpg"
+                     alt="Fresh Bread">
+
+                <h3>Artisan Bread</h3>
+
+                <p>
+                    Freshly baked every morning
+                    using premium ingredients.
+                </p>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/pastry.jpg"
+                     alt="Luxury Pastries">
+
+                <h3>Luxury Pastries</h3>
+
+                <p>
+                    Flaky buttery pastries crafted
+                    by expert bakers.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="product-card">
-            <p>
-                ⭐⭐⭐⭐⭐
-            </p>
+    </section>
 
-            <p>
-                "Fresh bread every morning and
-                excellent customer service."
-            </p>
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section>
 
-            <h3>- John K.</h3>
+        <h2>Why Choose Golden Crust?</h2>
+
+        <div class="product-gallery">
+
+            <div class="product-card">
+
+                <h3>Fresh Daily</h3>
+
+                <p>
+                    Every product is baked fresh
+                    every day.
+                </p>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>Premium Ingredients</h3>
+
+                <p>
+                    We use only the finest ingredients.
+                </p>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>Custom Orders</h3>
+
+                <p>
+                    Cakes and catering for special
+                    occasions.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="product-card">
-            <p>
-                ⭐⭐⭐⭐⭐
-            </p>
+    </section>
 
-            <p>
-                "Absolutely love their pastries.
-                Highly recommended!"
-            </p>
+    <!-- ================= TESTIMONIALS ================= -->
+    <section>
 
-            <h3>- Amanda T.</h3>
+        <h2>Customer Reviews</h2>
+
+        <div class="product-gallery">
+
+            <div class="product-card">
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <p>
+                    The best bakery in Johannesburg.
+                </p>
+
+                <h3>- Sarah M.</h3>
+
+            </div>
+
+            <div class="product-card">
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <p>
+                    Fresh bread every morning.
+                </p>
+
+                <h3>- John K.</h3>
+
+            </div>
+
+            <div class="product-card">
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <p>
+                    Amazing pastries and service.
+                </p>
+
+                <h3>- Amanda T.</h3>
+
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- ================= CALL TO ACTION ================= -->
+    <section>
 
-<!-- ================= CALL TO ACTION ================= -->
-<section>
+        <h2>Ready To Order?</h2>
 
-    <h2>Ready to Order?</h2>
+        <p>
+            Browse our products and place your order today.
+        </p>
 
-    <p>
-        Browse our products and place your order today.
-    </p>
+        <a href="enquiry.html" class="btn">
+            Order Now
+        </a>
 
-    <a href="enquiry.html">
-        <button>Order Now</button>
-    </a>
+    </section>
 
-</section>
+    <!-- ================= FOOTER ================= -->
+    <footer>
 
-<script src="js/script.js"></script>
+        <p>
+            © 2026 Golden Crust Bakery
+        </p>
 
-<!-- ================= FOOTER ================= -->
-<footer>
+        <p>
+            Johannesburg, South Africa
+        </p>
 
-    <p>
-        © 2026 Golden Crust Bakery | Freshly Baked Happiness Daily
-    </p>
+    </footer>
 
-    <p>
-        Johannesburg, South Africa
-    </p>
+    <!-- ================= BACK TO TOP ================= -->
+    <button id="topBtn">
+        ↑
+    </button>
 
-</footer>
-<button id="topBtn">↑</button>
-<div id="notification">
-    Welcome to Golden Crust Bakery!
-</div>
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+
 </body>
+</html>
+```
