@@ -1,115 +1,231 @@
-// ========================================
-// PRODUCT SEARCH FUNCTION
-// ========================================
+// ======================================
+// LOADING SCREEN
+// ======================================
 
-const searchInput = document.getElementById("searchInput");
+window.addEventListener("load", () => {
 
-if (searchInput) {
+    const loader = document.getElementById("loader");
 
-    searchInput.addEventListener("keyup", function () {
+    if(loader){
 
-        let filter = searchInput.value.toLowerCase();
+        setTimeout(() => {
 
-        let cards = document.querySelectorAll(".product-card");
+            loader.style.opacity = "0";
 
-        cards.forEach(function (card) {
+            setTimeout(() => {
 
-            let text = card.textContent.toLowerCase();
+                loader.style.display = "none";
 
-            if (text.includes(filter)) {
+            },500);
 
-                card.style.display = "block";
+        },1500);
 
-            } else {
+    }
 
-                card.style.display = "none";
+});
 
-            }
+// ======================================
+// TYPING EFFECT
+// ======================================
 
-        });
+const typingText =
+document.getElementById("typing-text");
 
-    });
+if(typingText){
+
+const message =
+"Freshly Baked Happiness Daily";
+
+let i = 0;
+
+function typeWriter(){
+
+    if(i < message.length){
+
+        typingText.innerHTML +=
+        message.charAt(i);
+
+        i++;
+
+        setTimeout(typeWriter,100);
+
+    }
 
 }
 
-// ========================================
-// LIGHTBOX IMAGE GALLERY
-// ========================================
-
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-if (lightbox && lightboxImg) {
-
-    const images = document.querySelectorAll(".product-card img");
-
-    images.forEach(function (img) {
-
-        img.addEventListener("click", function () {
-
-            lightbox.style.display = "block";
-
-            lightboxImg.src = img.src;
-
-        });
-
-    });
-
-    lightbox.addEventListener("click", function () {
-
-        lightbox.style.display = "none";
-
-    });
+typeWriter();
 
 }
 
-// ========================================
-// ENQUIRY FORM VALIDATION
-// ========================================
+// ======================================
+// DARK MODE
+// ======================================
 
-function validateForm() {
+const darkBtn =
+document.getElementById("darkModeBtn");
 
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-    let details = document.getElementById("details");
+if(darkBtn){
 
-    if (!name || !email || !details) {
-        return true;
-    }
+darkBtn.addEventListener("click",()=>{
 
-    if (name.value.trim() === "") {
+document.body.classList.toggle("dark-mode");
 
-        alert("Please enter your name.");
-        return false;
-
-    }
-
-    if (email.value.trim() === "") {
-
-        alert("Please enter your email.");
-        return false;
-
-    }
-
-    if (details.value.trim() === "") {
-
-        alert("Please enter your order details.");
-        return false;
-
-    }
-
-    alert("Form submitted successfully!");
-
-    return true;
+});
 
 }
 
-// ========================================
-// WELCOME MESSAGE
-// ========================================
+// ======================================
+// BACK TO TOP
+// ======================================
 
-window.addEventListener("load", function () {
+const topBtn =
+document.getElementById("topBtn");
 
-    console.log("Golden Crust Bakery Website Loaded Successfully");
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 300){
+
+topBtn.style.display="block";
+
+}
+else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+if(topBtn){
+
+topBtn.addEventListener("click",()=>{
+
+window.scrollTo({
+
+top:0,
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+// ======================================
+// PRODUCT SEARCH
+// ======================================
+
+const searchInput =
+document.getElementById("searchInput");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup",()=>{
+
+let filter =
+searchInput.value.toLowerCase();
+
+let cards =
+document.querySelectorAll(".product-card");
+
+cards.forEach(card=>{
+
+let text =
+card.textContent.toLowerCase();
+
+card.style.display =
+text.includes(filter)
+? "block"
+: "none";
+
+});
+
+});
+
+}
+
+// ======================================
+// LIGHTBOX
+// ======================================
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImg =
+document.getElementById("lightbox-img");
+
+if(lightbox){
+
+const images =
+document.querySelectorAll(".product-card img");
+
+images.forEach(img=>{
+
+img.addEventListener("click",()=>{
+
+lightbox.style.display="block";
+
+lightboxImg.src=img.src;
+
+});
+
+});
+
+lightbox.addEventListener("click",()=>{
+
+lightbox.style.display="none";
+
+});
+
+}
+
+// ======================================
+// NOTIFICATION
+// ======================================
+
+const notification =
+document.getElementById("notification");
+
+if(notification){
+
+setTimeout(()=>{
+
+notification.classList.add("show");
+
+},2000);
+
+setTimeout(()=>{
+
+notification.classList.remove("show");
+
+},6000);
+
+}
+
+// ======================================
+// SCROLL ANIMATION
+// ======================================
+
+const sections =
+document.querySelectorAll("section");
+
+const observer =
+new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible");
+
+}
+
+});
+
+});
+
+sections.forEach(section=>{
+
+observer.observe(section);
 
 });
