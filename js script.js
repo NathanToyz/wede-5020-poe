@@ -1,61 +1,115 @@
-const searchInput =
-document.getElementById("searchInput");
+// ========================================
+// PRODUCT SEARCH FUNCTION
+// ========================================
 
-if(searchInput){
+const searchInput = document.getElementById("searchInput");
 
-searchInput.addEventListener("keyup", function(){
+if (searchInput) {
 
-let filter =
-searchInput.value.toLowerCase();
+    searchInput.addEventListener("keyup", function () {
 
-let cards =
-document.querySelectorAll(".product-card");
+        let filter = searchInput.value.toLowerCase();
 
-cards.forEach(card=>{
+        let cards = document.querySelectorAll(".product-card");
 
-let text =
-card.textContent.toLowerCase();
+        cards.forEach(function (card) {
 
-if(text.includes(filter)){
-card.style.display="block";
-}
+            let text = card.textContent.toLowerCase();
 
-else{
-card.style.display="none";
-}
+            if (text.includes(filter)) {
 
-});
+                card.style.display = "block";
 
-});
+            } else {
 
-} 
-const images =
-document.querySelectorAll("img");
+                card.style.display = "none";
 
-const lightbox =
-document.getElementById("lightbox");
+            }
 
-const lightboxImg =
-document.getElementById("lightbox-img");
+        });
 
-if(lightbox){
-
-images.forEach(img=>{
-
-img.addEventListener("click",()=>{
-
-lightbox.style.display="block";
-
-lightboxImg.src=img.src;
-
-});
-
-});
-
-lightbox.addEventListener("click",()=>{
-
-lightbox.style.display="none";
-
-});
+    });
 
 }
+
+// ========================================
+// LIGHTBOX IMAGE GALLERY
+// ========================================
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+if (lightbox && lightboxImg) {
+
+    const images = document.querySelectorAll(".product-card img");
+
+    images.forEach(function (img) {
+
+        img.addEventListener("click", function () {
+
+            lightbox.style.display = "block";
+
+            lightboxImg.src = img.src;
+
+        });
+
+    });
+
+    lightbox.addEventListener("click", function () {
+
+        lightbox.style.display = "none";
+
+    });
+
+}
+
+// ========================================
+// ENQUIRY FORM VALIDATION
+// ========================================
+
+function validateForm() {
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let details = document.getElementById("details");
+
+    if (!name || !email || !details) {
+        return true;
+    }
+
+    if (name.value.trim() === "") {
+
+        alert("Please enter your name.");
+        return false;
+
+    }
+
+    if (email.value.trim() === "") {
+
+        alert("Please enter your email.");
+        return false;
+
+    }
+
+    if (details.value.trim() === "") {
+
+        alert("Please enter your order details.");
+        return false;
+
+    }
+
+    alert("Form submitted successfully!");
+
+    return true;
+
+}
+
+// ========================================
+// WELCOME MESSAGE
+// ========================================
+
+window.addEventListener("load", function () {
+
+    console.log("Golden Crust Bakery Website Loaded Successfully");
+
+});
